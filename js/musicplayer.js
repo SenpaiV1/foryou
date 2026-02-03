@@ -65,11 +65,13 @@ $(function () {
   function playPause() {
     setTimeout(function () {
       if (audio.paused) {
-        playerTrack.addClass("active");
-        albumArt.addClass("active");
-        checkBuffering();
-        i.attr("class", "fas fa-pause");
-        audio.play().catch(() => {});
+        if (audio.src) {
+          playerTrack.addClass("active");
+          albumArt.addClass("active");
+          checkBuffering();
+          i.attr("class", "fas fa-pause");
+          audio.play().catch(() => {});
+        }
       } else {
         playerTrack.removeClass("active");
         albumArt.removeClass("active");
@@ -263,9 +265,9 @@ $(function () {
       }
     });
 
-    // Add ended event to advance to next track
+    // Add ended event to advance to next track without autoplay
     $(audio).on("ended", function() {
-      selectTrack(1);
+      selectTrack(0);
     });
   }
 
