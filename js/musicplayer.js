@@ -69,7 +69,7 @@ $(function () {
         albumArt.addClass("active");
         checkBuffering();
         i.attr("class", "fas fa-pause");
-        audio.play();
+        audio.play().catch(() => {});
       } else {
         playerTrack.removeClass("active");
         albumArt.removeClass("active");
@@ -207,7 +207,7 @@ $(function () {
       bTime = bTime.getTime();
 
       if (flag != 0) {
-        audio.play();
+        audio.play().catch(() => {});
         playerTrack.addClass("active");
         albumArt.addClass("active");
 
@@ -233,7 +233,8 @@ $(function () {
     audio = new Audio();
     window.bgAudio = audio;
 
-    selectTrack(1);
+    // Select the first track but do not autoplay on page load (browsers block autoplay)
+    selectTrack(0);
 
     audio.loop = false;
 

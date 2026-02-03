@@ -146,37 +146,37 @@
     // the current layer.
     const pictures = [
       {
-        src: "../her/1.png",
+        src: "her/1.png",
         alt: "pretty.",
         caption: "““You have bewitched me, body and soul, and I love… I love… I love you.”",
       },
       {
-        src: "../her/2.png",
+        src: "her/2.png",
         alt: "cute",
         caption: "“I cannot live without my soul, and my soul is you.”",
       },
       {
-        src: "../her/3.png",
+        src: "her/3.png",
         alt: "gorgeous",
         caption: "“I love you without knowing how, or when, or from where.”",
       },
       {
-        src: "../her/4.png",
+        src: "her/4.png",
         alt: "beautiful",
         caption: "“My heart is ever at your service.”",
       },
       {
-        src: "../her/5.png",
+        src: "her/5.png",
         alt: "outstanding",
         caption: "“I crave your mouth, your voice, your hair.”",
       },
       {
-        src: "../her/6.png",
+        src: "her/6.png",
         alt: "lovely",
         caption: "“I would risk everything for your smile, for your happiness, for you.”",
       },
       {
-        src: "../her/US.png",
+        src: "her/US.png",
         alt: "us",
         caption:
           "“Whatever our souls are made of, his and mine are the same.” — Emily Brontë",
