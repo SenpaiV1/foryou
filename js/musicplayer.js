@@ -34,13 +34,13 @@ $(function () {
   ];
   const albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7"];
   const trackUrl = [
-    "/foryou/music/1.mp3",
-    "/foryou/music/3.mp3",
-    "/foryou/music/4.mp3",
-    "/foryou/music/5.mp3",
-    "/foryou/music/6.mp3",
-    "/foryou/music/7.mp3",
-    "/foryou/music/2.mp3"
+    "music/1.mp3",
+    "music/3.mp3",
+    "music/4.mp3",
+    "music/5.mp3",
+    "music/6.mp3",
+    "music/7.mp3",
+    "music/2.mp3"
   ];
 
   let bgArtworkUrl,
