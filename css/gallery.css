@@ -1,0 +1,49 @@
+* {
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform, box-shadow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 10px 0;
+}
+
+.shadow-on-hover {
+  background: white;
+  padding: 10px;          /* smaller padding for top/side */
+  padding-bottom: 50px;   /* thick bottom border */
+  border-radius: 8px;     /* softer corners */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.shadow-on-hover:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.shadow-on-hover img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 0; /* remove corner rounding on image itself */
+}
+
+.shadow-on-hover .caption {
+  margin-top: auto;   /* push caption to bottom */
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  text-align: center;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

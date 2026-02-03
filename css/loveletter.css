@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffe6f0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Heart Lock */
+  .heart-lock {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+  .heart-lock::before,
+  .heart-lock::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    top: 0;
+  }
+  .heart-lock::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  .heart-lock::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  /* Keyhole */
+  .keyhole {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 25px;
+    background: #fff;
+    border-radius: 6px 6px 10px 10px;
+    z-index: 1;
+  }
+  .keyhole::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  /* Key */
+  .key {
+    position: relative;
+    width: 60px;
+    height: 20px;
+    background: #ffd700;
+    border-radius: 4px;
+    cursor: grab;
+    margin-top: 30px;
+  }
+  .key::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    background: #ffd700;
+    border-radius: 50%;
+  }
+  .key::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 2px;
+    height: 10px;
+    background: #b8860b;
+    border-radius: 1px;
+  }
+
+  /* Reveal Button */
+  #revealButton {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4d6d;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background: #f4e4bc;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 100% 30px, 30px 100%;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 18px;
+    color: #5a4a3a;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 2px solid #d4c4a8;
+    font-family: 'Times New Roman', serif;
+  }
+  .modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  .modal-content::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 40px;
+    height: 40px;
+    background: rgba(101,67,33,0.3);
+    border-radius: 50%;
+    filter: blur(5px);
+    pointer-events: none;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #5a4a3a;
+  }
