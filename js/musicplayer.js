@@ -35,12 +35,12 @@ $(function () {
   const albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7"];
   const trackUrl = [
     "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/1.mp3",
-    "music/3.mp3",
-    "music/4.mp3",
-    "music/5.mp3",
-    "music/6.mp3",
-    "music/7.mp3",
-    "music/2.mp3"
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/3.mp3",
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/4.mp3",
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/5.mp3",
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/6.mp3",
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/7.mp3",
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/2.mp3"
   ];
 
   let bgArtworkUrl,
