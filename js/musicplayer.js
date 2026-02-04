@@ -34,7 +34,7 @@ $(function () {
   ];
   const albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7"];
   const trackUrl = [
-    "music/1.mp3",
+    "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/music/1.mp3",
     "music/3.mp3",
     "music/4.mp3",
     "music/5.mp3",

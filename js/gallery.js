@@ -146,7 +146,7 @@
     // the current layer.
     const pictures = [
       {
-        src: "her/1.png",
+        src: "https://media.githubusercontent.com/media/SenpaiV1/foryou/refs/heads/main/her/1.png",
         alt: "pretty.",
         caption: "““You have bewitched me, body and soul, and I love… I love… I love you.”",
       },
