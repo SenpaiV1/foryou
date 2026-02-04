@@ -235,8 +235,8 @@ $(function () {
     audio = new Audio();
     window.bgAudio = audio;
 
-    // Select the first track but do not autoplay on page load (browsers block autoplay)
-    selectTrack(0);
+    // Select the first track and attempt to autoplay on page load
+    selectTrack(1);
 
     audio.loop = false;
 
